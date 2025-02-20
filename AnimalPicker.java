@@ -12,6 +12,7 @@ public class AnimalPicker {
         } else if (choice == "dog") {
             System.out.println("DOG PLACEHOLDR");
         } else {
+            System.out.println("Error: Invalid option given.");
             System.out.println("I'm not sure what that is, but it isn't a cat or a dog...");
         }
     }
