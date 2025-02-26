@@ -10,10 +10,10 @@ public class AnimalPicker {
             System.out.println("Would you like to see a cat or a dog?");
             String choice = scan.nextLine();
 
-            if (choice == "cat") {
+            if (choice.equals("cat")) {
                 validChoice = true;
                 System.out.println("CAT PLACEHOLDER");
-            } else if (choice == "dog") {
+            } else if (choice.equals("dog")) {
                 validChoice = true;
                 System.out.println("DOG PLACEHOLDER");
             } else {
