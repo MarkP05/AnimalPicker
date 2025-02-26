@@ -7,7 +7,7 @@ public class AnimalPicker {
         boolean validChoice = false;
 
         while (validChoice == false) { 
-            System.out.println("Would you like to see a cat, a dog, or a FISH?");
+            System.out.println("Would you like to see a cat, a dog, or a FISH?... or bob?");
             String choice = scan.nextLine();
 
             if (choice.equals("cat")) {
@@ -50,7 +50,9 @@ public class AnimalPicker {
                                         "                /   `._____V_____V'\r\n" + //
                                         "                           '     '");
                 System.out.println("goofy fish");
-            } else {
+            } else if (choice.equals("bob")) {
+                System.out.println("    .--..--..--..--..--..--.\n    .\' \\  (`._   (_)     _   \\\n  .\'    |  \'._)         (_)  |\n  \\ _.\')\\      .----..---.   /\n  |(_.\'  |    /    .-\\-.  \\  |\n  \\     0|    |   ( O| O) | o|\n   |  _  |  .--.____.\'._.-.  |\n   \\ (_) | o         -` .-`  |\n    |    \\   |`-._ _ _ _ _\\ /\n    \\    |   |  `. |_||_|   |\n    | o  |    \\_      \\     |     -.   .-.\n    |.-.  \\     `--..-\'   O |     `.`-\' .\'\n  _.\'  .\' |     `-.-\'      /-.__   \' .-\'\n.\' `-.` \'.|=\'=.=\'=.=\'=.=\'=|._/_ `-\'.\'\n`-._  `.  |________/\\_____|    `-.\'\n   .\'   ).| \'=\' \'=\'\\/ \'=\' |\n   `._.`  \'---------------\'\n           //___\\   //___\\\n             ||       ||\n             ||_.-.   ||_.-.\n            (_.--__) (_.--__)");
+            }else {
                 System.out.println("Error: Invalid option given.");
                 System.out.println("I'm not sure what that is, but it isn't a cat or a dog...");
             }
